@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 import pandas as pd
+import sys
 
 # Get details for plots from look up table
 from column_name_renaming import col_shortener
@@ -14,9 +15,17 @@ from bivariate_instructions import which_by_which
 
 
 DATAFILELOC = "./data/"
-DATAFILENAME = "Cleaning-of-Uni-Soton-Software-Survey-26Jun19.csv"
+DATAFILENAME = "SoftwareSurveyTestData.csv"
 CSVSTORE = "./output_csv/"
 BIVARIATESTORE = "./output_csv/bivariate/"
+
+def print_df(df):
+    """
+    """
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+        print(df)    
+
+    return df
 
 
 def import_csv_to_df(location, filename):
@@ -26,7 +35,7 @@ def import_csv_to_df(location, filename):
     :return: a df
     """
     
-    return pd.read_csv(location + filename)
+    return pd.read_csv(location + filename, header=0)
 
 
 def export_to_csv(df, location, filename, index_write):
@@ -39,16 +48,29 @@ def export_to_csv(df, location, filename, index_write):
     return df.to_csv(location + filename + '.csv', index=index_write)
 
 
-def remove_timestamp(df):
+def remove_columns(df):
     """
-    We don't need the Timestamp col in the analysis but it is nice to have it in the data (in case people want to see
-    how responses came in. Hence I can't remove it in the cleaning stage completed before this analysis, but I'll remove
-    it now.
-    :param df: the main df containing all the data
-    :return: the main df, but without a Timestamp col
+    Removes a specified column from the data. In this case we remove the RecordedDate column.
+    :param df
+    :return: the main df, but without the specified column
     """
 
-    df.drop(labels=['Timestamp'], axis='columns', inplace=True)
+    df.drop(labels=['RecordedDate'], axis='columns', inplace=True)
+
+    return df
+
+
+def remove_indices(df):
+    """
+    Removes the 2nd and 3rd line and all unfinished surveys from the data set. 
+    :param df
+    :return: the main df, but without the specified rows
+    """
+
+    df.drop(df.index[0], inplace=True)
+    df.drop(df.index[0], inplace=True)
+
+    df = df[df.Finished != 'False']
 
     return df
 
@@ -73,6 +95,7 @@ def shorten_faculties(df):
     """
 
     df['faculty'].replace(regex=True, inplace=True, to_replace=r'Faculty of ', value=r'')
+    df['faculty'].replace(regex=True, inplace=True, to_replace=r'Strathclyde Business School', value=r'Business School')
 
     return df
 
@@ -338,11 +361,17 @@ def main():
 
     df = import_csv_to_df(DATAFILELOC, DATAFILENAME)
 
-    df = remove_timestamp(df)
+    df = remove_columns(df)
+
+    df = remove_indices(df)
 
     df = clean_col_names(df)
 
     df = shorten_faculties(df)
+
+    df = print_df(df)
+
+    sys.exit(0)
 
     summary_dfs = get_counts(df)
 
