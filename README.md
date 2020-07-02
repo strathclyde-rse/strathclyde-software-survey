@@ -8,7 +8,7 @@ The raw data was cleaned using Open Refine to remove email addresses, for privac
 
 ## Results
 
-If you want quick access to the results, take a [look at the report](https://github.com/Southampton-RSG/soton_software_survey_analysis_2019/blob/master/report/Results%20of%20University%20of%20Southampton%20software%20survey%20June%202019.pdf).
+If you want quick access to the results, take a [look at the report](https://github.com/Southampton-RSG/soton_software_survey_analysis_2019/blob/master/report/Research%20software%20at%20the%20University%20of%20Southampton.pdf).
 
 Charts of the univariate analysis can also be seen in [this simple presentation](https://slides.com/simonhettrick/results-of-university-of-southampton-software-survey).
 
