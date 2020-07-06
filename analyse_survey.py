@@ -21,12 +21,25 @@ BIVARIATESTORE = "./output_csv/bivariate/"
 
 def print_df(df):
     """
+    Use this function BEFORE the df has been converted to dict
     """
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):
         print(df)    
 
     return df
 
+def print_dict(df):
+    """
+    Use this function AFTER the df has been converted to dict
+    """
+    for x in df:
+        print('1: ',x)
+        for y in df[x]:
+            print('2: ',y)
+            print('3: ',df[x][y])
+        print('\n')
+
+    return df
 
 def import_csv_to_df(location, filename):
     """
@@ -161,6 +174,7 @@ def change_lows_to_other(summary_dfs):
     """
 
     for key in add_an_other_category:
+        print(summary_dfs[key])
         df_temp = summary_dfs[key]
         # New index makes the current index a col that we can work with
         df_temp.reset_index(inplace=True)
@@ -369,14 +383,17 @@ def main():
 
     df = shorten_faculties(df)
 
-    df = print_df(df)
-
-    sys.exit(0)
-
     summary_dfs = get_counts(df)
 
-    summary_dfs = clean_software_funding(summary_dfs)
+# The following call seems to be specific to the 
+# cleaning of the Soton data and has been commented out.
 
+#    summary_dfs = clean_software_funding(summary_dfs)
+
+    summary_dfs = print_dict(summary_dfs)
+
+# The following call produces an error. 
+# At the moment it is unclear how the elements of the dict can be accessed. 
     summary_dfs = change_lows_to_other(summary_dfs)
 
     find_number_responses(summary_dfs, df)
