@@ -209,7 +209,7 @@ def find_number_responses(summary_dfs, df):
     # This approach doesn't work for multiple choice questions (you get over-counting for anyone that added more than
     # one response. For these questions, to get the response number we must go back to the original df
 
-    multi_questions = ['funders', 'funds_for_development']
+    multi_questions = ['funders']
 
     for current_question in multi_questions:
         df_temp = df.dropna(axis=0, subset=[current_question])
@@ -291,7 +291,7 @@ def scale_worded_questions(summary_dfs):
         # New index makes the current index a col that we can work with
         df_temp.reset_index(inplace=True)
 
-        if key in ['version_control', 'continuous_integration', 'unit_testing']:
+        if key in ['version_control', 'continuous_integration', 'unit_regression_testing']:
             # These categoricals allow you to order a column based on a list. Seems long winded, but it was the only
             # straightforward way I could find to do it.
             df_temp['answers'] = pd.Categorical(df_temp['answers'],
@@ -387,13 +387,8 @@ def main():
 
 # The following call seems to be specific to the 
 # cleaning of the Soton data and has been commented out.
-
 #    summary_dfs = clean_software_funding(summary_dfs)
 
-    summary_dfs = print_dict(summary_dfs)
-
-# The following call produces an error. 
-# At the moment it is unclear how the elements of the dict can be accessed. 
     summary_dfs = change_lows_to_other(summary_dfs)
 
     find_number_responses(summary_dfs, df)
@@ -411,7 +406,7 @@ def main():
     write_out_summaries(summary_dfs)
 
     # Conduct bivariate analysis
-    bivariate_analysis(df, summary_dfs)
+#    bivariate_analysis(df, summary_dfs)
 
 if __name__ == '__main__':
     main()
