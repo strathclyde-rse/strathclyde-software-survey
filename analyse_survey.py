@@ -406,7 +406,7 @@ def main():
     write_out_summaries(summary_dfs)
 
     # Conduct bivariate analysis
-#    bivariate_analysis(df, summary_dfs)
+    bivariate_analysis(df, summary_dfs)
 
 if __name__ == '__main__':
     main()
