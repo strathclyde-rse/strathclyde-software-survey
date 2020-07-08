@@ -15,7 +15,6 @@ Amazon vouchers.
 The survey will remain open until < DATE >.
 
 Thank you,
-
 Neil Ghani, Oliver Henrich, Benjamin Hourahine, Romain Michalec, Fredrik Nordvall Forsberg, Leighton Pritchard, Daniel Thomas
 
 The Strathclyde Research Software Engineers community
