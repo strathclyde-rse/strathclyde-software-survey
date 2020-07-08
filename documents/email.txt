@@ -16,15 +16,8 @@ The survey will remain open until < DATE >.
 
 Thank you,
 
-Neil Ghani
-Oliver Henrich
-Benjamin Hourahine
-Romain Michalec
-Fredrik Nordvall Forsberg
-Leighton Pritchard
-Daniel Thomas
+Neil Ghani, Oliver Henrich, Benjamin Hourahine, Romain Michalec, Fredrik Nordvall Forsberg, Leighton Pritchard, Daniel Thomas
 
-on behalf of
 The Strathclyde Research Software Engineers community
 ***REMOVED***
 
