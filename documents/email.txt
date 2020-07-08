@@ -1,4 +1,4 @@
-Dear Collegue,
+Dear Colleague,
 
 Most research would not be possible without software. We are trying to
 identify the relationship between software and research at the
@@ -9,10 +9,22 @@ help us by taking part in this survey:
 
 It should take 5--10 minutes to complete, and your answers are
 important to us even if you do not use software. As a thank you,
-participants will be entered in a prize draw to win one of four £50
+participants will be entered in a prize draw to win one of ten £20
 Amazon vouchers.
 
 The survey will remain open until < DATE >.
 
 Thank you,
+
+Neil Ghani
+Oliver Henrich
+Benjamin Hourahine
+Romain Michalec
+Fredrik Nordvall Forsberg
+Leighton Pritchard
+Daniel Thomas
+
+on behalf of
 The Strathclyde Research Software Engineers community
+***REMOVED***
+
