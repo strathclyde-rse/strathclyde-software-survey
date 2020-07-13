@@ -2,9 +2,9 @@ Dear RKES and Ethics Committee,
 
 We are planning to conduct a survey on research software engineering (RSE) across all Departments of the University. The primary purpose of the survey is to determine the scope for a centralised RSE service to increase Strathclyde's capacity to produce better software for better research and to increase our competitiveness in funding applications and knowledge exchange activities.
 
-During the last years UK funding councils began to recognise software as a major research infrastructure that needs investment and professional maintenance along its life cycle. Grant applicatons, which contain a software development component, but do not provide a convincing software development and management strategy, are no longer aligned with the strategic goals of the funders. It is also worth recalling that data management plans are essential for data-intensive grants to be deemed fundable.
+During the last years UK funding councils began to recognise software as a major research infrastructure that needs investment and professional maintenance along its life cycle. Grant applications, which contain a software development component, but do not provide a convincing software development and management strategy, are no longer aligned with the strategic goals of the funders. It is also worth recalling that data management plans are essential for data-intensive grants to be deemed fundable.
 
-For further information on software and e-infrastructure stategies I refer to the EPSRC/UKRI website and the UK Society of Research Software Engineering:
+For further information on software and e-infrastructure strategies I refer to the EPSRC/UKRI website and the UK Society of Research Software Engineering:
 https://epsrc.ukri.org/files/research/softwareinfrastructurestrategy2018
 https://epsrc.ukri.org/files/research/einfrastructurestrategy2018
 https://society-rse.org
