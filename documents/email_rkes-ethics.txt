@@ -1,15 +1,15 @@
 Dear RKES and Ethics Committee,
 
-We are planning to conduct a survey on research software engineering (RSE) across all Departments of the University. The primary purpose of the survey is to determine the scope for a centralised RSE service to increase Strathclyde's capacity to produce better software for better research and to increase our competitiveness in funding applications and knowledge exchange activities.
+We are planning to conduct a survey on research software engineering (RSE) across all Departments of the University. The primary purpose of the survey is to determine the need and scope for a centralised RSE service to increase Strathclyde's capacity to produce better software for better research and to increase our competitiveness in funding applications and knowledge exchange activities.
 
-During the last years UK funding councils began to recognise software as a major research infrastructure that needs investment and professional maintenance along its life cycle. Grant applications, which contain a software development component, but do not provide a convincing software development and management strategy, are no longer aligned with the strategic goals of the funders. It is also worth recalling that data management plans are essential for data-intensive grants to be deemed fundable.
+In the last few years UK funding councils have began to recognise software as a major research infrastructure that needs investment and professional maintenance throughout its life cycle. Grant applications, which contain a software development component, but do not provide a convincing software development and management strategy, are no longer aligned with the strategic goals of the funders. It is also worth recalling that data management plans are essential for data-intensive grants to be deemed fundable.
 
-For further information on software and e-infrastructure strategies I refer to the EPSRC/UKRI website and the UK Society of Research Software Engineering:
+For further information on software and e-infrastructure strategies we refer to the EPSRC/UKRI website and the UK Society of Research Software Engineering:
 https://epsrc.ukri.org/files/research/softwareinfrastructurestrategy2018
 https://epsrc.ukri.org/files/research/einfrastructurestrategy2018
 https://society-rse.org
 
-Our survey consists of the attached set of questions and is ready to go online. All results are anonymous and emails addresses that we collect during the survey will be deleted from the final data set. Although we have currently no plans to publish the results beyond an internal report, we would like to have the freedom to make them available to a wider professional group, e.g. as part of a national report on RSE.
+Our survey consists of the attached set of questions and is ready to go online on Qualtrics. All results are anonymous apart from the optional emails addresses that we collect during the survey which will be deleted from the final data set. Although we have currently no plans to publish the results beyond an internal report, we would like to have the freedom to make them available to a wider professional group, e.g. as part of a national report on RSE. The survey will distributed by email through the HoD list, Inside Strathclyde, and local RSE mailing lists. A copy of the proposed email text is attached. 10 £20 Amazon vouchers will be offered as an incentive.
 
 We would be grateful if you could please let us know whether you see any conflicts with University policies or if you have further suggestions.
 
