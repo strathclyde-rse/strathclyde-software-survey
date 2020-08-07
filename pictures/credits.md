@@ -33,3 +33,20 @@ Strathclyde faculty colors taken from the [University's branding guidelines](htt
 | Green      |       31 |         110 |         84 |     141 |
 | Blue       |       29 |         163 |         14 |      47 |
 | HTML       |   e11f1d |      006ea3 |     e7540e |  648d2f |
+
+# More photos
+
+Look for "code" or "programmer" on [Unsplash](https://unsplash.com), [Pexels](https://www.pexels.com), [StockSnap](https://stocksnap.io), [Pixabay](https://pixabay.com)... Always check the license.
+
+# Export SVG to PNG with Inkscape
+
+Use *File > Export PNG Image...* or the command line interface (`--export-area-page` is the default so it can be left out):
+
+```shell
+# Export to the original size by using the original resolution,
+# typically 72 dpi for photographs
+inkscape --export-png=out.png --export-area-page --export-dpi=72 in.svg
+
+# Export to a smaller size by using --export-width or --export-height
+inkscape --export-png=out.png --export-area-page --export-width=250 in.svg
+```
