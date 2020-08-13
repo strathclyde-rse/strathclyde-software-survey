@@ -13,3 +13,5 @@ https://strathsci.qualtrics.com/jfe/form/SV_5bzr0Ei5EqS6Szz
 and will remain open until the end of the month.
 
 Various researchers were involved in the design of the survey: Neil Ghani, Oliver Henrich, Benjamin Hourahine, Romain Michalec, Fredrik Nordvall-Forsberg, Leighton Pritchard, Daniel Thomas. If you have any questions about the survey or research software engineering, please contact the Strathclyde Research Software Engineers community directly on ***REMOVED***.
+
+Icons by Freepik from Flaticon
