@@ -1,19 +1,15 @@
 Software developed for modelling, simulation, data analysis and experimental instrumentation is a critical and valuable resource. In fact, most research would not be possible without it. The large suite of codes used in research should be regarded as a vital and complex infrastructure that requires professional support and maintenance along the innovation chain, and throughout its lifecycle.
 
-Despite its importance for academic research, software is often poorly managed. Researchers focus primarily on advancing the science and pay little attention to the IT infrastructure they create in the process. This has a profoundly negative impact on the feasibility of future research and the reproducibility of its results. Inferior software standards also limit the possibility to commercialise academic software products. Hence, it is not surprising that this practice is increasingly questioned. 
+Despite its importance for academic research, software is often poorly managed. Researchers focus primarily on advancing the science and pay little attention to the IT infrastructure they create in the process. This has a profoundly negative impact on the feasibility of future research and the reproducibility of its results. Inferior software standards also limit the possibility to commercialise academic software products. Hence, it is not surprising that this practice is increasingly questioned.
 
-Funding bodies began to hold researchers and institutions accountable for the software outputs of research grants. Grant applications that contain a significant amount of software development, but do not have a convincing software development and management strategy, are no longer aligned with the strategic goals of the funders (see for instance EPSRC's Software Infrastructure Strategy 2018, https://epsrc.ukri.org/files/research/softwareinfrastructurestrategy2018 or e-Infrastructure Strategy 2018, https://epsrc.ukri.org/files/research/einfrastructurestrategy2018).
+Funding bodies began to hold researchers and institutions accountable for the software outputs of research grants. Grant applications that contain a significant amount of software development, but do not have a convincing software development and management strategy, are no longer deemed competitive as they do not align with the strategic goals of the funders (see for instance EPSRC's Software Infrastructure Strategy 2018, https://epsrc.ukri.org/files/research/softwareinfrastructurestrategy2018 or e-Infrastructure Strategy 2018, https://epsrc.ukri.org/files/research/einfrastructurestrategy2018).
 
-We are trying to identify the relationship between software and research at the University of Strathclyde, and would highly appreciate if you could help us by taking part in a short, anonymous survey for staff and PGR students. It should take 5--10 minutes to complete and your answers are important to us, even if you do not use software. We hope to use this information to increase Strathclyde's competitiveness when e.g. applying for grants. As a thank you, participants may enter a prize draw to win one of ten £20 Amazon vouchers.
+The community of Research Software Engineers is trying to identify the local relationship between software and research. It would be highly appreciated if you could help this effort by taking part in a short, anonymous survey for staff and PGR students. It should take 5--10 minutes to complete and your answers are very important, even if you do not use software. As a thank you, participants may enter a prize draw to win one of ten £20 Amazon vouchers.
 
-The survey is accessible following the link 
+The survey is accessible following the link
 
 https://strathsci.qualtrics.com/jfe/form/SV_5bzr0Ei5EqS6Szz
 
 and will remain open until the end of the month.
 
-Thank you,
-Oliver Henrich, Neil Ghani, Benjamin Hourahine, Romain Michalec, Daniel Thomas, Fredrik Nordvall Forsberg, Leighton Pritchard
-
-The Strathclyde Research Software Engineers community
-***REMOVED***
+Various researchers were involved in the design of the survey: Neil Ghani, Oliver Henrich, Benjamin Hourahine, Romain Michalec, Fredrik Nordvall-Forsberg, Leighton Pritchard, Daniel Thomas. If you have any questions about the survey or research software engineering, please contact the Strathclyde Research Software Engineers community directly on ***REMOVED***.
