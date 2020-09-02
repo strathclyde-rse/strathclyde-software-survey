@@ -1,3 +1,5 @@
 answers,unit_regression_testing,percentage
-Confident,2,50.0
-Very confident,2,50.0
+Confident,5,36.0
+Not confident,4,29.0
+Not heard of it,4,29.0
+Very confident,1,7.0
