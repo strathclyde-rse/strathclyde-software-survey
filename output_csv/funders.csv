@@ -1,2 +1,36 @@
 answers,funders,percentage
-other,28,100.0
+UKRI: EPSRC,17,19.0
+Other:,15,17.0
+"UKRI: EPSRC,UKRI: Innovate UK",6,7.0
+"Industry,UKRI: EPSRC,UKRI: Innovate UK",5,6.0
+Industry,5,6.0
+"Leverhulme Trust,UKRI: EPSRC",4,4.0
+"Industry,UKRI: EPSRC",4,4.0
+"UKRI: EPSRC,UKRI: Innovate UK,Other:",2,2.0
+"UKRI: EPSRC,Other:",2,2.0
+"Industry,Leverhulme Trust,UKRI: EPSRC",2,2.0
+ERC,2,2.0
+"Industry,UKRI: EPSRC,Other:",2,2.0
+"Cancer Research UK,ERC,Leverhulme Trust,UKRI: BBSRC,UKRI: EPSRC,Wellcome Trust",1,1.0
+Scottish Funding Council,1,1.0
+"UKRI: BBSRC,UKRI: EPSRC",1,1.0
+"Scottish Funding Council,Other:",1,1.0
+"UKRI: AHRC,UKRI: EPSRC",1,1.0
+"NIHR,Other:",1,1.0
+"UKRI: EPSRC,UKRI: Innovate UK,UKRI: MRC",1,1.0
+"UKRI: EPSRC,UKRI: STFC",1,1.0
+"NIHR,UKRI: EPSRC,UKRI: MRC",1,1.0
+"Leverhulme Trust,UKRI: AHRC,UKRI: EPSRC,UKRI: Innovate UK",1,1.0
+"Leverhulme Trust,UKRI: ESRC,UKRI: Innovate UK,Wellcome Trust,Other:",1,1.0
+"Leverhulme Trust,UKRI: EPSRC,UKRI: Innovate UK",1,1.0
+"Leverhulme Trust,UKRI: AHRC,UKRI: EPSRC,UKRI: ESRC",1,1.0
+"Industry,UKRI: EPSRC,UKRI: ESRC,UKRI: Innovate UK,UKRI: STFC",1,1.0
+"Industry,UKRI: BBSRC,UKRI: EPSRC,UKRI: MRC",1,1.0
+"Industry,Scottish Funding Council,UKRI: EPSRC,UKRI: Innovate UK",1,1.0
+"Industry,Other:",1,1.0
+"Industry,Leverhulme Trust,UKRI: BBSRC,UKRI: EPSRC,UKRI: Innovate UK",1,1.0
+"ERC,Industry,UKRI: Innovate UK",1,1.0
+"ERC,Industry,UKRI: EPSRC,UKRI: NERC,UKRI: STFC",1,1.0
+"ERC,Industry,UKRI: EPSRC",1,1.0
+"ERC,Industry,Scottish Funding Council,UKRI: EPSRC,UKRI: Innovate UK",1,1.0
+UKRI: NERC,1,1.0

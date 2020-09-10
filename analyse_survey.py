@@ -153,11 +153,11 @@ def clean_software_funding(summary_dfs):
             people who do not write bids are not included.
     """
 
-    key = 'funds_for_development'
+    key = 'funders'
 
     df_temp = summary_dfs[key]
 
-    df_temp.drop(index='No (I\'m not involved in writing funding proposals)', inplace=True)
+    df_temp.drop(index='Other:', inplace=True)
     # Obviously, removing one of the options changes the percentages, so have to re-do that calculation
     df_temp['percentage'] = round(100 * df_temp[key] / df_temp[key].sum(), 0)
 
@@ -385,11 +385,11 @@ def main():
 
     summary_dfs = get_counts(df)
 
-# The following call seems to be specific to the 
-# cleaning of the Soton data and has been commented out.
+#    print_dict(summary_dfs)
+
 #    summary_dfs = clean_software_funding(summary_dfs)
 
-    summary_dfs = change_lows_to_other(summary_dfs)
+#    summary_dfs = change_lows_to_other(summary_dfs)
 
     find_number_responses(summary_dfs, df)
 
