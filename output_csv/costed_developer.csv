@@ -1,6 +1,5 @@
 answers,costed_developer,percentage
- I'm not involved in writing funding proposals,27,17.0
- but we DID expect to write software as part of the project,26,16.0
- we did NOT expect to write software as part of the project,18,11.0
-No,71,44.0
-Yes,21,13.0
+"No, I'm not involved in writing funding proposals",27,29.0
+"No, but we DID expect to write software as part of the project",26,28.0
+"No, we did NOT expect to write software as part of the project",18,20.0
+Yes,21,23.0

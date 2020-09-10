@@ -112,6 +112,19 @@ def shorten_faculties(df):
 
     return df
 
+def replace_separator(df):
+    """
+    The Qualtrics separator of multiple choice answers is a comma. This needs to be replaced by a semicolon 
+    to get the correct counts of the individual answers.
+    : param df: the main df
+    : return: the main df with ',' replaced by ';' in the funders column
+    """
+
+    key = 'funders'
+
+    df[key] = df[key].str.replace(',',';')
+
+    return df
 
 def get_counts(df):
     """
@@ -132,7 +145,7 @@ def get_counts(df):
         # them individually. The method I use (with Stack etc) below fails on answers that are numeric, so I filter them
         # out. Obviously, anything with a semicolon in it is not numeric!
         if df_counts['answers'].dtype == 'object':
-            df_counts = (df_counts.set_index(current_col)['answers'].str.split(',', expand=True).stack().reset_index(name='answers').groupby('answers', as_index=False)[current_col].sum())
+            df_counts = (df_counts.set_index(current_col)['answers'].str.split(';', expand=True).stack().reset_index(name='answers').groupby('answers', as_index=False)[current_col].sum())
         df_counts.set_index('answers', inplace=True)
         df_counts['percentage'] = round(100 * df_counts[current_col] / df_counts[current_col].sum(), 0)
         # Save as dict of dfs
@@ -141,16 +154,12 @@ def get_counts(df):
     return summary_dfs
 
 
-def clean_software_funding(summary_dfs):
+
+def clean_funders(summary_dfs):
     """
-    Removes the 'No (I\'m not involved in writing funding proposals)' answer from the question on whether people have
-    applied for software funding. In a perfect world, this would have been removed in the pre-analysis data cleaning in
-    OpenRefine, but that's not possible, because this is a multiple choice question that separates multiple answers
-    with semi-colons and OpenRefine can't handle that. The get_counts function deals with the semicolon problem, so now
-    we can finish cleaning the data.
+    Removes the 'Other:' answer from the question and corrects the counts.
     :param summary_dfs: dict of dfs holding summaries on the answers to each question
-    :return: dict of dfs holding summaries on the answers to each question - but with the funding question cleaned so
-            people who do not write bids are not included.
+    :return: dict of dfs holding summaries on the answers to each question - but with the funder question cleaned.
     """
 
     key = 'funders'
@@ -383,9 +392,11 @@ def main():
 
     df = shorten_faculties(df)
 
+    df = replace_separator(df)
+
     summary_dfs = get_counts(df)
 
-#    summary_dfs = clean_software_funding(summary_dfs)
+#    summary_dfs = clean_funders(summary_dfs)
 
 #    summary_dfs = change_lows_to_other(summary_dfs)
 
