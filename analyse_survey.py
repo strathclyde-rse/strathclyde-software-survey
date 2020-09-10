@@ -132,7 +132,7 @@ def get_counts(df):
         # them individually. The method I use (with Stack etc) below fails on answers that are numeric, so I filter them
         # out. Obviously, anything with a semicolon in it is not numeric!
         if df_counts['answers'].dtype == 'object':
-            df_counts = (df_counts.set_index(current_col)['answers'].str.split(';', expand=True).stack().reset_index(name='answers').groupby('answers', as_index=False)[current_col].sum())
+            df_counts = (df_counts.set_index(current_col)['answers'].str.split(',', expand=True).stack().reset_index(name='answers').groupby('answers', as_index=False)[current_col].sum())
         df_counts.set_index('answers', inplace=True)
         df_counts['percentage'] = round(100 * df_counts[current_col] / df_counts[current_col].sum(), 0)
         # Save as dict of dfs
@@ -181,7 +181,7 @@ def change_lows_to_other(summary_dfs):
         # Make a Boolean mask of all the rows that have fewer than 5 responses and use it
         # to change the category to 'other'
         mask = df_temp[key].le(5)
-        df_temp.loc[mask, 'answers'] = 'other'
+        df_temp.loc[mask, 'answers'] = 'others_cummulative'
         # Collapse all the 'other' rows into a single row, sum the result and convert back to a df
         df_temp = pd.DataFrame(df_temp.groupby('answers')[key].sum())
         df_temp.columns = [key]
@@ -384,8 +384,6 @@ def main():
     df = shorten_faculties(df)
 
     summary_dfs = get_counts(df)
-
-#    print_dict(summary_dfs)
 
 #    summary_dfs = clean_software_funding(summary_dfs)
 
